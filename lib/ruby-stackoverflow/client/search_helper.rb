@@ -17,7 +17,7 @@ module RubyStackoverflow
       end
 
       def search_response(query, options={})
-        getr 'search', 'question', options.merge(title: title)
+        getr 'search', 'question', options.merge(intitle: query)
       end
 
     end
